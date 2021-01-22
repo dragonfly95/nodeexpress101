@@ -45,7 +45,7 @@ dbTest().then((rows) => {
     console.log(row);
   })
 });
-*/
+
 
 let mysql = require('mysql');
 var connection = mysql.createConnection({
@@ -64,7 +64,7 @@ connection.query('select * from i_deny_numbers limit 0, 10', (error, results, fi
 });
 
 connection.end();
-
+*/
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   next(createError(404));
